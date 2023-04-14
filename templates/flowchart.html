@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid.js Flowchart</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({startOnLoad:true});
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Create New Flowchart</a>
+    </nav>
+    <h1>Generated Mermaid.js Flowchart</h1>
+    <div class="mermaid">
+        {{ flowchart_content }}
+    </div>
+</body>
+</html>
+
